@@ -1,1 +1,7 @@
-<h1>ここにメッセージを入力</h1>
+<h1>献立はこれ！</h1>
+
+<p><%=@staple%></p>
+<p><%=@main_dish%></p>
+<p><%=@sub_dish%></p>
+<p><%=@soup%></p>
+<%=link_to "もう一度献立を決める", dish_index_path, method: :get%>
