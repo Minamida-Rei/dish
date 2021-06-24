@@ -2,6 +2,7 @@ class MainController < ApplicationController
   protect_from_forgery
   def index
     @user_dish = UserDish.new
+    @food = Food.new
   end
 
   def create

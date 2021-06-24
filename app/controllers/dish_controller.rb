@@ -20,4 +20,16 @@ class DishController < ApplicationController
       return redirect_to dish_index_path
     end
   end
+
+  def create
+    @user_dish = Food.new(food_params)
+    @user_dish.save
+    redirect_to root_path
+  end
+
+  private
+
+  def food_params
+    params.require(:food).permit(:staple, :main_dish, :sub_dish, :soup)
+  end
 end

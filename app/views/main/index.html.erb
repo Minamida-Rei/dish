@@ -13,3 +13,13 @@
 <div class = "main_content">
   <%= link_to "ユーザーの意見も交えて献立をきめる", user_dish_index_path, method: :get, class: "btn"%>
 </div>
+
+<div>
+<%=form_with model: @food, url: dish_index_path, method: :create, local: true do |f|%>
+  <%=f.text_area :staple, placeholder:"主食を入力してください", maxlength:"15"%>
+  <%=f.text_area :main_dish, placeholder:"主菜を入力してください", maxlength:"20"%>
+  <%=f.text_area :sub_dish, placeholder:"副菜を入力してください", maxlength:"20"%>
+  <%=f.text_area :soup, placeholder:"汁物を入力してください", maxlength:"15"%>
+  <%=f.submit "登録する"%>
+<%end%>
+</div>
