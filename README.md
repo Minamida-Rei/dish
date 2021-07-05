@@ -24,18 +24,46 @@
 
 ## データベース設計
 
-### foods
+### staples
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| staple    | string |        |
-| main_dish | string |        |
-| sub_dish  | string |        |
-| soup      | string |        |
+| content   | string |        |
+| url       | string |        |
 
-### user_foods
-| Column         | Type   | Option |
-| -------------- | ------ | ------ |
-| user_staple    | string |        |
-| user_main_dish | string |        |
-| user_sub_dish  | string |        |
-| user_soup      | string |        |
+### main_dish
+| Column    | Type   | Option |
+| --------- | ------ | ------ |
+| content   | string |        |
+| url       | string |        |
+
+### sub_dish
+| Column    | Type   | Option |
+| --------- | ------ | ------ |
+| content   | string |        |
+| url       | string |        |
+
+### soup
+| Column    | Type   | Option |
+| --------- | ------ | ------ |
+| content   | string |        |
+| url       | string |        |
+
+### user_staples
+| Column    | Type   | Option |
+| --------- | ------ | ------ |
+| content   | string |        |
+
+### user_main_dish
+| Column    | Type   | Option |
+| --------- | ------ | ------ |
+| content   | string |        |
+
+### user_sub_dish
+| Column    | Type   | Option |
+| --------- | ------ | ------ |
+| content   | string |        |
+
+### user_soup
+| Column    | Type   | Option |
+| --------- | ------ | ------ |
+| content   | string |        |
