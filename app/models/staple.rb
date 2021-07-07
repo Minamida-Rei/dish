@@ -1,0 +1,2 @@
+class Staple < ApplicationRecord
+end
