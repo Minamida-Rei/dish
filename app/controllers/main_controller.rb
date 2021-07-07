@@ -1,7 +1,6 @@
 class MainController < ApplicationController
   protect_from_forgery
   def index
-    @user_dish = UserDish.new
   end
 
   def create

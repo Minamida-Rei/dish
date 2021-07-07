@@ -1,23 +1,11 @@
 class DishController < ApplicationController
   def index
-    @staple = Food.order("RAND()").first.staple
-    if @staple.blank?
-      return redirect_to dish_index_path
-    end
+    @staple = Staple.order("RAND()").first.staple
 
-    @main_dish = Food.order("RAND()").second.main_dish
-    if @main_dish.blank?
-      return redirect_to dish_index_path
-    end
+    @main_dish = MainDish.order("RAND()").first.m_dish
 
-    @sub_dish = Food.order("RAND()").third.sub_dish
-    if @sub_dish.blank?
-      return redirect_to dish_index_path
-    end
+    @sub_dish = SubDish.order("RAND()").first.s_dish
 
-    @soup = Food.order("RAND()").fourth.soup
-    if @soup.blank?
-      return redirect_to dish_index_path
-    end
+    @soup = Soup.order("RAND()").first.soup
   end
 end
