@@ -1,0 +1,2 @@
+class UserMainDish < ApplicationRecord
+end

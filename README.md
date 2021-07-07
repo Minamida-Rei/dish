@@ -51,19 +51,19 @@
 ### user_staples
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
+| u_staple  | string |        |
 
 ### user_main_dishes
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
+| u_main    | string |        |
 
 ### user_sub_dishes
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
+| u_sub     | string |        |
 
 ### user_soups
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
+| u_soup    | string |        |
