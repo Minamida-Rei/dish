@@ -1,11 +1,11 @@
 <h1>DISH</h1>
-<%#=form_with model: @user_dish, url: main_index_path, method: :create, local: true do |f|%>
-  <%#=f.text_area :user_staple, placeholder:"主食を入力してください", maxlength:"15"%>
-  <%#=f.text_area :user_main_dish, placeholder:"主菜を入力してください", maxlength:"20"%>
-  <%#=f.text_area :user_sub_dish, placeholder:"副菜を入力してください", maxlength:"20"%>
-  <%#=f.text_area :user_soup, placeholder:"汁物を入力してください", maxlength:"15"%>
-  <%#=f.submit "登録する"%>
-<%#end%>
+<%=form_with model: @user_dish, url: main_index_path, method: :create, local: true do |f|%>
+  <%=f.text_area :u_staple, placeholder:"主食を入力してください", maxlength:"15"%>
+  <%=f.text_area :u_main, placeholder:"主菜を入力してください", maxlength:"20"%>
+  <%=f.text_area :u_sub, placeholder:"副菜を入力してください", maxlength:"20"%>
+  <%=f.text_area :u_soup, placeholder:"汁物を入力してください", maxlength:"15"%>
+  <%=f.submit "登録する"%>
+<%end%>
 <div class = "main_content">
   <%= link_to "献立をきめる", dish_index_path, method: :get, class: "btn"%>
 </div>
