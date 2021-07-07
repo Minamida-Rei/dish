@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2021_07_07_080415) do
   end
 
   create_table "user_soups", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "u_soup"
+    t.string "u_soup", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
