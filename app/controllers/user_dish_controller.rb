@@ -1,23 +1,12 @@
 class UserDishController < ApplicationController
   def index
-    @staple = UserDish.order("RAND()").first.user_staple
-    if @staple.blank?
-      return redirect_to user_dish_index_path
-    end
+    @staple = UserStaple.order("RAND()").first.u_staple
+    
+    @main_dish = UserMainDish.order("RAND()").first.u_main
 
-    @main_dish = UserDish.order("RAND()").second.user_main_dish
-    if @main_dish.blank?
-      return redirect_to user_dish_index_path
-    end
+    @sub_dish = UserSubDish.order("RAND()").first.u_sub
 
-    @sub_dish = UserDish.order("RAND()").third.user_sub_dish
-    if @sub_dish.blank?
-      return redirect_to user_dish_index_path
-    end
-
-    @soup = UserDish.order("RAND()").fourth.user_soup
-    if @soup.blank?
-      return redirect_to user_dish_index_path
-    end
+    @soup = UserSoup.order("RAND()").first.u_soup
+   
   end
 end
