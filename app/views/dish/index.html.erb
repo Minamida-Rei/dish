@@ -1,7 +1,12 @@
 <h1>献立はこれ！</h1>
-
-<p><%=@staple.staple%></p><div><%=@staple.st_url%></div>
-<p><%=@main_dish.m_dish%></p><div><%=@main_dish.md_url%></div>
-<p><%=@sub_dish.s_dish%></p><div><%=@sub_dish.sd_url%></div>
-<p><%=@soup.soup%></p><div><%=@soup.s_url%></div>
-<%#=link_to "もう一度献立を決める", dish_index_path, method: :get%>
+<br>
+<ul>
+  <li><%=@staple.staple%>  <%=link_to "主食のレシピはこちら", @staple.st_url%></li>
+  <li><%=@main_dish.m_dish%>  <%=link_to "主菜のレシピはこちら", @main_dish.md_url%></li>
+  <li><%=@sub_dish.s_dish%>  <%=link_to "副菜のレシピはこちら", @sub_dish.sd_url%></li>
+  <li><%=@soup.soup%>  <%=link_to "汁物のレシピはこちら", @soup.s_url%></li>
+</ul>
+<br>
+<div>*レシピ確認は外部サイトにアクセスします</div>
+<%=link_to "もう一度献立を決める", dish_index_path, method: :get%>
+<%=link_to "トップページに戻る", root_path, method: :get%>
