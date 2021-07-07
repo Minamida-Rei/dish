@@ -1,7 +1,7 @@
 <h1>献立はこれ！</h1>
 
-<p><%=@staple%></p>
-<p><%=@main_dish%></p>
-<p><%=@sub_dish%></p>
-<p><%=@soup%></p>
+<p><%=@staple.staple%></p><div><%=@staple.st_url%></div>
+<p><%=@main_dish.m_dish%></p><div><%=@main_dish.md_url%></div>
+<p><%=@sub_dish.s_dish%></p><div><%=@sub_dish.sd_url%></div>
+<p><%=@soup.soup%></p><div><%=@soup.s_url%></div>
 <%#=link_to "もう一度献立を決める", dish_index_path, method: :get%>

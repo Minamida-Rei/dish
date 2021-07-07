@@ -1,11 +1,11 @@
 class DishController < ApplicationController
   def index
-    @staple = Staple.order("RAND()").first.staple
+    @staple = Staple.order("RAND()").first
 
-    @main_dish = MainDish.order("RAND()").first.m_dish
+    @main_dish = MainDish.order("RAND()").first
 
-    @sub_dish = SubDish.order("RAND()").first.s_dish
+    @sub_dish = SubDish.order("RAND()").first
 
-    @soup = Soup.order("RAND()").first.soup
+    @soup = Soup.order("RAND()").first
   end
 end
