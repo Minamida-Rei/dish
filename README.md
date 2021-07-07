@@ -27,43 +27,43 @@
 ### staples
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
-| url       | string |        |
+| staple    | string |        |
+| st_url    | string |        |
 
-### main_dish
+### main_dishes
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
-| url       | string |        |
+| m_dish    | string |        |
+| md_url    | string |        |
 
-### sub_dish
+### sub_dishes
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
-| url       | string |        |
+| s_dish    | string |        |
+| sd_url    | string |        |
 
-### soup
+### soups
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
-| content   | string |        |
-| url       | string |        |
+| soup      | string |        |
+| s_url     | string |        |
 
 ### user_staples
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
 | content   | string |        |
 
-### user_main_dish
+### user_main_dishes
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
 | content   | string |        |
 
-### user_sub_dish
+### user_sub_dishes
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
 | content   | string |        |
 
-### user_soup
+### user_soups
 | Column    | Type   | Option |
 | --------- | ------ | ------ |
 | content   | string |        |
