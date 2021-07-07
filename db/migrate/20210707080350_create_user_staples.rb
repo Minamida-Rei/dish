@@ -1,7 +1,7 @@
 class CreateUserStaples < ActiveRecord::Migration[6.0]
   def change
     create_table :user_staples do |t|
-
+      t.string :u_staple
       t.timestamps
     end
   end
