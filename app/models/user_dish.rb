@@ -1,2 +1,0 @@
-class UserDish < ApplicationRecord
-end
