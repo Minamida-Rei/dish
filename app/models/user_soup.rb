@@ -1,0 +1,2 @@
+class UserSoup < ApplicationRecord
+end
