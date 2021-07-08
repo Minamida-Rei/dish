@@ -1,16 +1,31 @@
 <h1>DISH</h1>
-<%=form_with model: @user_dish, url: main_index_path, method: :create, local: true do |f|%>
-  <%=f.text_area :u_staple, placeholder:"主食を入力してください", maxlength:"15"%>
-  <%=f.text_area :u_main, placeholder:"主菜を入力してください", maxlength:"20"%>
-  <%=f.text_area :u_sub, placeholder:"副菜を入力してください", maxlength:"20"%>
-  <%=f.text_area :u_soup, placeholder:"汁物を入力してください", maxlength:"15"%>
-  <%=f.submit "登録する"%>
-<%end%>
+
 <div class = "main_content">
   <%= link_to "献立をきめる", dish_index_path, method: :get, class: "btn"%>
 </div>
 
-<div class = "main_content">
+<div class = "sub_content">
   <%= link_to "ユーザーの意見も交えて献立をきめる", user_dish_index_path, method: :get, class: "btn"%>
 </div>
 
+<h2>料理追加フォームはこちら！(「ユーザーの意見も交えて献立を決める」にのみ反映されます)</h2>
+
+<div class="dish_form">
+  <%=form_with model: @user_dish, url: main_index_path, method: :create, local: true do |f|%>
+    <%=f.text_area :u_staple, placeholder:"主食を入力してください", maxlength:"15"%>
+    <%=f.text_area :u_main, placeholder:"主菜を入力してください", maxlength:"20"%>
+    <%=f.text_area :u_sub, placeholder:"副菜を入力してください", maxlength:"20"%>
+    <%=f.text_area :u_soup, placeholder:"汁物を入力してください", maxlength:"15"%>
+    <%=f.submit "登録する"%>
+  <%end%>
+</div>
+
+<div class="attention_plz">
+  注意！
+</div>
+<div class="attention">
+  料理追加フォームに書き込まれた情報は全世界に公開される情報です。
+</div>
+<div class="attention">
+  センシティブな投稿・他の方が不快になるような投稿はご遠慮いただきますようお願いいたします。
+</div>

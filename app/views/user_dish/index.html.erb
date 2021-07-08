@@ -4,3 +4,11 @@
 <p><%=@main_dish%></p>
 <p><%=@sub_dish%></p>
 <p><%=@soup%></p>
+
+<%=link_to user_dish_index_path do%>
+  <button class="btn_more">もう一度献立を決める</button>
+<%end%>
+<br>
+<%=link_to root_path do%>
+  <button class="btn_redirect">トップページに戻る</button>
+<% end %>

@@ -7,6 +7,11 @@
   <li><%=@soup.soup%>  <%=link_to "汁物のレシピはこちら", @soup.s_url%></li>
 </ul>
 <br>
-<div>*レシピ確認は外部サイトにアクセスします</div>
-<%=link_to "もう一度献立を決める", dish_index_path, method: :get%>
-<%=link_to "トップページに戻る", root_path, method: :get%>
+<div class= "recipi_info">*レシピ確認は外部サイトにアクセスします</div>
+<%=link_to dish_index_path do%>
+  <button class="btn_more">もう一度献立を決める</button>
+<%end%>
+<br>
+<%=link_to root_path do%>
+  <button class="btn_redirect">トップページに戻る</button>
+<% end %>
